@@ -28,6 +28,30 @@ const project = {
       ],
     },
     {
+      name: "video",
+      title: "Video",
+      type: "file",
+      options: {
+        accept: "video/*", // Accepts only video files
+      },
+      fields: [
+        {
+          name: "caption",
+          title: "Caption",
+          type: "string",
+          options: {
+            isHighlighted: true, // Makes the caption field easily accessible
+          },
+        },
+        {
+          name: "alt",
+          title: "Alt",
+          type: "string",
+          description: "A brief description of the video content",
+        },
+      ],
+    },
+    {
       name: "url",
       title: "URL",
       type: "url",
