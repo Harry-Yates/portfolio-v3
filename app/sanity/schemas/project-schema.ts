@@ -32,7 +32,7 @@ const project = {
       title: "Video",
       type: "file",
       options: {
-        accept: "video/*", // Accepts only video files
+        accept: "video/*",
       },
       fields: [
         {
@@ -40,7 +40,7 @@ const project = {
           title: "Caption",
           type: "string",
           options: {
-            isHighlighted: true, // Makes the caption field easily accessible
+            isHighlighted: true,
           },
         },
         {
