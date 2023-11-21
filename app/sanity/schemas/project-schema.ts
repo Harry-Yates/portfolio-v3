@@ -29,31 +29,30 @@ const project = {
     },
     {
       name: "video",
-      title: "Video",
+      title: "Video Upload",
       type: "file",
-      options: {
-        accept: "video/*",
-      },
       fields: [
-        {
-          name: "caption",
-          title: "Caption",
-          type: "string",
-          options: {
-            isHighlighted: true,
-          },
-        },
         {
           name: "alt",
           title: "Alt",
           type: "string",
-          description: "A brief description of the video content",
+        },
+        {
+          name: "videoUrl",
+          title: "Video Url",
+          url: "string",
+          type: "string",
         },
       ],
     },
     {
       name: "url",
       title: "URL",
+      type: "url",
+    },
+    {
+      name: "github",
+      title: "GitHub URL",
       type: "url",
     },
     {
