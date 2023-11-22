@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Harry Yates",
+export const metadata = {
+  title: "Harry Yates | Fullstack Developer",
   description: "Portfolio",
 };
 
@@ -16,7 +12,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className="flex flex-col items-center justify-start min-h-screen bg-[#F7F7F7]"
+        style={{ fontFamily: "'Helvetica Now Display', Arial, sans-serif" }}>
+        {children}
+      </body>
     </html>
   );
 }
