@@ -1,17 +1,12 @@
 "use client";
 
-import React, { useEffect } from "react";
-import "./globals.css";
+import { useEffect } from "react";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const useCustomScroll = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let lastScroll = 0;
-      const scrollSpeed = 0.2;
+      const scrollSpeed = 0.1;
 
       const onScroll = (e: any) => {
         lastScroll += e.deltaY * scrollSpeed;
@@ -33,13 +28,6 @@ export default function RootLayout({
       };
     }
   }, []);
+};
 
-  return (
-    <html lang="en">
-      <body
-        style={{ fontFamily: "'Helvetica Now Display', Arial, sans-serif" }}>
-        {children}
-      </body>
-    </html>
-  );
-}
+export default useCustomScroll;

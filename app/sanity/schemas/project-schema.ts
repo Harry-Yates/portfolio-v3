@@ -37,12 +37,6 @@ const project = {
           title: "Alt",
           type: "string",
         },
-        {
-          name: "videoUrl",
-          title: "Video Url",
-          url: "string",
-          type: "string",
-        },
       ],
     },
     {

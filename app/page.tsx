@@ -2,15 +2,20 @@ import { getProjects as fetchProjects } from "@/app/sanity/sanity-utils";
 import Links from "./components/Links";
 import VideoCard from "./components/VideoCard";
 
+export const metadata = {
+  title: "Harry Yates | Fullstack Developer",
+  description: "Portfolio",
+};
+
 export default async function Home() {
   const projects = await fetchProjects();
   console.log(projects);
 
   return (
-    <div className="flex flex-col items-start justify-start min-h-screen bg-[#F7F7F7] mx-16 md:mx-6 lg:mx-8 max-w-5xl">
+    <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-16 md:px-16 lg:px-8">
       <header className="w-full mx-auto flex flex-col justify-between items-start">
         <h1 className=" font-medium inline mt-20">Harry Yates</h1>
-        <p className=" font-light mt-4 mb-8 w-1/5 w-[205px]">
+        <p className=" font-light mt-4 mb-8 w-[205px]">
           I am a Fullstack Developer focusing on React and Typescript.
         </p>
         <Links />
@@ -22,7 +27,7 @@ export default async function Home() {
             project={project}></VideoCard>
         ))}
       </main>
-      <footer className="pt-20 pb-24">
+      <footer className="pt-20 pb-2">
         <Links />
       </footer>
     </div>
