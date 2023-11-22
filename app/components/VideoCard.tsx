@@ -6,7 +6,7 @@ export default function VideoCard({ project }: { project: Project }) {
   return (
     <div className="grid grid-cols-1 gap-4">
       <div className="group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
-        <div className="shadow-md transition-shadow rounded-sm duration-100 group-hover:shadow-lg">
+        <div className="shadow-lg transition-shadow rounded-sm duration-100 group-hover:shadow-xl">
           <video
             className="w-full rounded-sm bg-[#E3E3E3] overflow-hidden object-cover"
             src={video}
