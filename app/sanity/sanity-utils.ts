@@ -8,15 +8,16 @@ export async function getProjects(): Promise<Project[]> {
     apiVersion: "2021-11-20",
   });
 
-  const query = groq`*[_type == "project"]{
+  const query = groq`*[_type == "project"] | order(_createdAt desc){
     _id,
     _createdAt,
     name,
     "slug": slug.current,
     // "image": image.asset->url,
     "video": video.asset->url,
-    // url,
-    // content,
+    url,
+    github,
+    content,
   }`;
 
   const projects = await client.fetch(query);
