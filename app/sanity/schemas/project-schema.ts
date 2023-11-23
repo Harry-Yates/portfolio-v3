@@ -31,17 +31,10 @@ const project = {
       name: "video",
       title: "Video Upload",
       type: "file",
-      fields: [
-        {
-          name: "alt",
-          title: "Alt",
-          type: "string",
-        },
-      ],
     },
     {
       name: "url",
-      title: "URL",
+      title: "Website URL",
       type: "url",
     },
     {

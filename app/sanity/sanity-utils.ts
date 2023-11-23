@@ -13,14 +13,15 @@ export async function getProjects(): Promise<Project[]> {
     _createdAt,
     name,
     "slug": slug.current,
-    // "image": image.asset->url,
+    "image": image.asset->url,
     "video": video.asset->url,
     url,
     github,
-    content,
+    content
   }`;
 
   const projects = await client.fetch(query);
+  console.log(projects);
 
   return projects;
 }
