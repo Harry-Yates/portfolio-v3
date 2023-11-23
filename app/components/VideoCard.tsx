@@ -1,7 +1,7 @@
 import { Project } from "@/app/types/Project";
 
 export default function VideoCard({ project }: { project: Project }) {
-  const { video, name, url, image } = project;
+  const { video, name, url } = project;
 
   return (
     <a
@@ -20,12 +20,6 @@ export default function VideoCard({ project }: { project: Project }) {
                 muted
                 loop
                 preload="none"
-              />
-            ) : image ? (
-              <img
-                src={image}
-                alt={name}
-                className="rounded-sm bg-[#E3E3E3] overflow-hidden w-full h-full object-cover max-h-[250px] min-h-[250px]"
               />
             ) : (
               <div className="flex justify-center items-center w-full h-full object-cover max-h-[250px] min-h-[250px] bg-[#E3E3E3]">
