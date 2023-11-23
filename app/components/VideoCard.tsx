@@ -18,7 +18,7 @@ export default function VideoCard({ project }: { project: Project }) {
             style={{ paddingTop: "56.25%" }}>
             {video ? (
               <video
-                className="rounded-sm absolute top-0 left-0 h-full object-cover"
+                className="rounded-sm bg-[#E3E3E3] absolute top-0 left-0 h-full object-cover"
                 src={video}
                 autoPlay
                 playsInline
