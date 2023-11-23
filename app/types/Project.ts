@@ -7,6 +7,6 @@ export type Project = {
   slug: string;
   video: string;
   url: string;
-  github: string;
+  github: string | null;
   content: PortableTextBlock[];
 };

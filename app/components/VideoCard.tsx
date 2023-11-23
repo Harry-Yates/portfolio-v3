@@ -1,15 +1,16 @@
 import { Project } from "@/app/types/Project";
+import { CodeBracketSquareIcon } from "@heroicons/react/24/outline";
 
 export default function VideoCard({ project }: { project: Project }) {
-  const { video, name, url } = project;
+  const { video, name, url, github } = project;
 
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="py-4 border-b-2 border-gray-200 pb-9 ">
-      <div className="grid grid-cols-1 gap-4">
+    <div className="grid grid-cols-1 gap-4 relative">
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="py-4 border-b-2 border-gray-200/60 pb-12 relative">
         <div className="group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
           <div className="shadow-lg transition-shadow rounded-sm duration-100 group-hover:shadow-xl">
             {video ? (
@@ -34,7 +35,16 @@ export default function VideoCard({ project }: { project: Project }) {
             possimus deserunt laborum quasi sunt.
           </p>
         </div>
-      </div>
-    </a>
+      </a>
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 left-0">
+          <CodeBracketSquareIcon className="h-6 w-6 text-gray-300" />
+        </a>
+      )}
+    </div>
   );
 }
