@@ -13,10 +13,12 @@ export default function VideoCard({ project }: { project: Project }) {
         rel="noopener noreferrer"
         className="py-4 border-b-2 border-gray-200/60 pb-12 relative">
         <div className="group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
-          <div className="shadow-lg transition-shadow rounded-sm duration-100 group-hover:shadow-xl">
+          <div
+            className="shadow-lg transition-shadow rounded-sm duration-100 group-hover:shadow-xl relative w-full"
+            style={{ paddingTop: "56.25%" }}>
             {video ? (
               <video
-                className="rounded-sm bg-[#E3E3E3] overflow-hidden w-full h-full object-cover max-h-[250px] min-h-[250px]"
+                className="rounded-sm absolute top-0 left-0 h-full object-cover"
                 src={video}
                 autoPlay
                 playsInline
