@@ -1,8 +1,9 @@
 import { Project } from "@/app/types/Project";
 import { CodeBracketSquareIcon } from "@heroicons/react/24/outline";
+import { PortableText } from "@portabletext/react";
 
 export default function VideoCard({ project }: { project: Project }) {
-  const { video, name, url, github } = project;
+  const { video, name, url, github, content } = project;
 
   return (
     <div className="grid grid-cols-1 gap-4 relative">
@@ -29,11 +30,11 @@ export default function VideoCard({ project }: { project: Project }) {
             )}
           </div>
           {url && <p className="font-medium my-2">{name}</p>}
-          <p className="text-gray-700 w-3/4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
-            itaque beatae. Aperiam ipsum quas vel? Deleniti nobis, quam tempore
-            possimus deserunt laborum quasi sunt.
-          </p>
+          {content && (
+            <div className="text-gray-700 w-3/4">
+              <PortableText value={content} />
+            </div>
+          )}
         </div>
       </a>
       {github && (
