@@ -5,7 +5,6 @@ export type Project = {
   _createdAt: Date;
   name: string;
   slug: string;
-  image: string | null;
   video: string;
   url: string;
   github: string;
