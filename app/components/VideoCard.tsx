@@ -19,6 +19,7 @@ export default function VideoCard({ project }: { project: Project }) {
                 className="rounded-sm bg-[#E3E3E3] overflow-hidden w-full h-full object-cover max-h-[250px] min-h-[250px]"
                 src={video}
                 autoPlay
+                playsInline
                 muted
                 loop
                 preload="none"
