@@ -9,7 +9,7 @@ export const metadata = {
 
 export default async function Home() {
   const projects = await fetchProjects();
-  console.log(projects);
+
 
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-16 md:px-16 lg:px-8">
