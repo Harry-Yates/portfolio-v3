@@ -9,7 +9,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    if (typeof window !== "undefined" && !isMobile) {
       let lastScroll = 0;
       const scrollSpeed = 0.2;
 
