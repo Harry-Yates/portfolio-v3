@@ -14,6 +14,88 @@ export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
       <Head>
+        {/* <!-- Primary Meta Tags --> */}
+        <title>Harry Yates | Fullstack Developer</title>
+        <meta
+          name="title"
+          content="Harry Yates | Fullstack Developer"
+        />
+        <meta
+          name="description"
+          content="I am a Fullstack Developer focusing on JavaScript. "
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:url"
+          content="https://www.hyates.com/"
+        />
+        <meta
+          property="og:title"
+          content="Harry Yates | Fullstack Developer"
+        />
+        <meta
+          property="og:description"
+          content="I am a Fullstack Developer focusing on JavaScript. "
+        />
+        <meta
+          property="og:image"
+          // content="https://metatags.io/images/meta-tags.png"
+          content="../app/favicon.ico"
+        />
+
+        {/* <!-- Twitter --> */}
+        <meta
+          property="twitter:card"
+          content="summary_large_image"
+        />
+        <meta
+          property="twitter:url"
+          content="https://www.hyates.com/"
+        />
+        <meta
+          property="twitter:title"
+          content="Harry Yates | Fullstack Developer"
+        />
+        <meta
+          property="twitter:description"
+          content="I am a Fullstack Developer focusing on JavaScript. "
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+          // content="../app/favicon.ico"
+        />
+
+        <link
+          rel="preload"
+          href="/fonts/HelveticaNowDisplay-Regular.woff2"
+          as="font"
+          type="font/woff2"
+        />
+        <link
+          rel="preload"
+          href="/fonts/HelveticaNowDisplay-Regular.woff2"
+          as="font"
+          type="font/woff"
+        />
+        <link
+          rel="preload"
+          href="/fonts/HelveticaNowDisplay-Medium.woff2"
+          as="font"
+          type="font/woff2"
+        />
+        <link
+          rel="preload"
+          href="/fonts/HelveticaNowDisplay-Medium.woff2"
+          as="font"
+          type="font/woff"
+        />
+
         <link
           rel="icon"
           href="/favicon.ico"
