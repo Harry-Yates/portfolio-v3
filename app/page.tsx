@@ -15,7 +15,8 @@ export default async function Home() {
       <header className="w-full mx-auto flex flex-col justify-between items-start">
         <h1 className=" font-medium inline mt-20">Harry Yates</h1>
         <p className=" font-light mt-4 mb-8 w-[205px]">
-          I am a Fullstack Developer focusing on React and Typescript.
+          I am a Fullstack Developer focusing on JavaScript, TypeScript and
+          React.
         </p>
         <Links />
       </header>
