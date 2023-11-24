@@ -48,6 +48,7 @@ a {
     url("/fonts/HelveticaNowDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -56,4 +57,5 @@ a {
     url("/fonts/HelveticaNowDisplay-Medium.woff") format("woff");
   font-weight: 500; /* Medium weight */
   font-style: normal;
+  font-display: swap;
 }
