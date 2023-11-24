@@ -13,6 +13,7 @@
     "@portabletext/react": "^3.0.11",
     "next": "14.0.3",
     "next-sanity": "^6.0.5",
+    "node-cache": "^5.1.2",
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^3.20.0"

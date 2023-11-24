@@ -15,7 +15,8 @@ export default function VideoCard({ project }: { project: Project }) {
         <div className="group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
           <div
             className="shadow-lg transition-shadow rounded-sm duration-100 group-hover:shadow-xl relative w-full"
-            style={{ paddingTop: "56.25%" }}>
+            // style={{ paddingTop: "56.25%" }}
+            style={{ paddingTop: "51.25%" }}>
             {video ? (
               <video
                 className="rounded-sm bg-[#E3E3E3] absolute top-0 left-0 h-full object-cover"
