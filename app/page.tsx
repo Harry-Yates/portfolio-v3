@@ -48,8 +48,8 @@ export default async function Home() {
         />
         <meta
           property="og:image"
+          // TODO
           content="https://metatags.io/images/meta-tags.png"
-          content="../app/favicon.ico"
         />
 
         {/* <!-- Twitter --> */}
@@ -71,8 +71,8 @@ export default async function Home() {
         />
         <meta
           property="twitter:image"
+          // TODO
           content="https://metatags.io/images/meta-tags.png"
-          content="../app/favicon.ico"
         />
 
         <link
