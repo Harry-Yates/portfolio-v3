@@ -15,22 +15,22 @@ export default async function Home() {
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
       <Head>
         <link
+          rel="icon"
+          href="/favicon.ico"
+          sizes="any"
+        />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link
           rel="apple-touch-icon"
-          sizes="180x180"
-          href="./apple-touch-icon.png"></link>
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="./favicon-32x32.png"></link>
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="./favicon-16x16.png"></link>
-        <link
-          rel="manifest"
-          href="./site.webmanifest"></link>
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
       </Head>
       <header className="w-full mx-auto flex flex-col justify-between items-start">
         <h1 className=" font-medium inline mt-20">Harry Yates</h1>
