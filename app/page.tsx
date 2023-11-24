@@ -14,6 +14,10 @@ export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
       <Head>
+        <meta
+          name="google-site-verification"
+          content="OhjW79UdHlM0Z1UE66JfX9Bxf9QYz7V-S6isNZfQ4eE"
+        />
         {/* <!-- Primary Meta Tags --> */}
         <title>Harry Yates | Fullstack Developer</title>
         <meta
@@ -44,7 +48,7 @@ export default async function Home() {
         />
         <meta
           property="og:image"
-          // content="https://metatags.io/images/meta-tags.png"
+          content="https://metatags.io/images/meta-tags.png"
           content="../app/favicon.ico"
         />
 
@@ -68,7 +72,7 @@ export default async function Home() {
         <meta
           property="twitter:image"
           content="https://metatags.io/images/meta-tags.png"
-          // content="../app/favicon.ico"
+          content="../app/favicon.ico"
         />
 
         <link
