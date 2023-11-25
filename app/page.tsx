@@ -14,10 +14,6 @@ export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
       <Head>
-        <meta
-          name="google-site-verification"
-          content="OhjW79UdHlM0Z1UE66JfX9Bxf9QYz7V-S6isNZfQ4eE"
-        />
         {/* <!-- Primary Meta Tags --> */}
         <title>Harry Yates | Fullstack Developer</title>
         <meta
@@ -48,7 +44,8 @@ export default async function Home() {
         />
         <meta
           property="og:image"
-          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
+          // content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
+          content="/share.jpg"
         />
 
         {/* <!-- Twitter --> */}
@@ -70,7 +67,8 @@ export default async function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
+          // content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
+          content="/share.jpg"
         />
 
         <link
