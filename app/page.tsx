@@ -48,8 +48,7 @@ export default async function Home() {
         />
         <meta
           property="og:image"
-          // TODO
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
         />
 
         {/* <!-- Twitter --> */}
@@ -71,8 +70,7 @@ export default async function Home() {
         />
         <meta
           property="twitter:image"
-          // TODO
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
         />
 
         <link
