@@ -44,8 +44,8 @@ export default async function Home() {
         />
         <meta
           property="og:image"
-          // content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
-          content="/share.jpg"
+          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
+          // content="/share.jpg"
         />
 
         {/* <!-- Twitter --> */}
@@ -67,8 +67,8 @@ export default async function Home() {
         />
         <meta
           property="twitter:image"
-          // content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
-          content="/share.jpg"
+          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
+          // content="/share.jpg"
         />
 
         <link
@@ -122,11 +122,12 @@ export default async function Home() {
         </p>
         <Links />
       </header>
-      <main className="w-full  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <main className="w-full  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {projects.map((project) => (
           <VideoCard
             key={project._id}
-            project={project}></VideoCard>
+            project={project}
+          />
         ))}
       </main>
       <footer className="pt-20 pb-2">

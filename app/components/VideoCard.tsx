@@ -12,9 +12,9 @@ export default function VideoCard({ project }: { project: Project }) {
         target="_blank"
         rel="noopener noreferrer"
         className="py-4 border-b-2 border-gray-200/60 pb-12 relative">
-        <div className="group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
+        <div className="fade-in-slide-up group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
           <div
-            className="light-shadow transition-shadow rounded-sm duration-500 relative w-full"
+            className="first-letter:light-shadow transition-shadow rounded-sm duration-500 relative w-full"
             // style={{ paddingTop: "56.25%" }}
             style={{ paddingTop: "51.25%" }}>
             {video ? (
