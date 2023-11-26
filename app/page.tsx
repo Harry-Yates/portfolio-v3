@@ -2,6 +2,7 @@ import { getProjects as fetchProjects } from "@/app/sanity/sanity-utils";
 import Links from "./components/Links";
 import VideoCard from "./components/VideoCard";
 import { Metadata } from "next";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Harry Yates | Fullstack Developer",
@@ -13,10 +14,10 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
-      <head>
+      <Head>
         <meta
           property="og:image"
-          content="https://www.hyates.com/opengraph-image.jpg"
+          content="https://www.hyates.com/fb-image.jpg"
         />
         <meta
           property="og:image:type"
@@ -32,7 +33,7 @@ export default async function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://www.hyates.com/twitter-image.jpg"
+          content="https://www.hyates.com/tw-image.jpg"
         />
         <meta
           name="twitter:image:type"
@@ -46,7 +47,7 @@ export default async function Home() {
           name="twitter:image:height"
           content="630"
         />
-      </head>
+      </Head>
       <header className="w-full mx-auto flex flex-col justify-between items-start">
         <h1 className=" font-medium inline mt-20">Harry Yates</h1>
         <p className=" font-light mt-4 mb-8 w-[205px]">
