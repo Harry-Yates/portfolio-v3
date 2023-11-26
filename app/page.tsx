@@ -17,7 +17,8 @@ export default async function Home() {
       <Head>
         <meta
           property="og:image"
-          content="https://www.hyates.com/fb-image.jpg"
+          // content="https://www.hyates.com/fb-image.jpg"
+          content="https://www.hyates.com/opengraph-image.jpg"
         />
         <meta
           property="og:image:type"
