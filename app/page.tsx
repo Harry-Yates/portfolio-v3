@@ -13,13 +13,6 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
-      <head>
-        <title>Hello world</title>
-        <meta
-          property="og:image"
-          content="https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png"
-        />
-      </head>
       <header className="w-full mx-auto flex flex-col justify-between items-start">
         <h1 className=" font-medium inline mt-20">Harry Yates</h1>
         <p className=" font-light mt-4 mb-8 w-[205px]">
