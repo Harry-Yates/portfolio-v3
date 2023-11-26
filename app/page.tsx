@@ -1,7 +1,7 @@
 import { getProjects as fetchProjects } from "@/app/sanity/sanity-utils";
 import Links from "./components/Links";
 import VideoCard from "./components/VideoCard";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Head from "next/head";
 
 export const metadata: Metadata = {
