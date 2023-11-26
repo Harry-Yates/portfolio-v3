@@ -6,6 +6,8 @@ import Head from "next/head";
 export const metadata = {
   title: "Harry Yates | Fullstack Developer",
   description: "Portfolio",
+  ogImage:
+    "https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg",
 };
 
 export default async function Home() {
@@ -14,18 +16,15 @@ export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
       <Head>
-        {/* <!-- Primary Meta Tags --> */}
-        <title>Harry Yates | Fullstack Developer</title>
+        <title>{metadata.title}</title>
         <meta
           name="title"
-          content="Harry Yates | Fullstack Developer"
+          content={metadata.title}
         />
         <meta
           name="description"
-          content="I am a Fullstack Developer focusing on JavaScript. "
+          content={metadata.description}
         />
-
-        {/* <!-- Open Graph / Facebook --> */}
         <meta
           property="og:type"
           content="website"
@@ -36,19 +35,16 @@ export default async function Home() {
         />
         <meta
           property="og:title"
-          content="Harry Yates | Fullstack Developer"
+          content={metadata.title}
         />
         <meta
           property="og:description"
-          content="I am a Fullstack Developer focusing on JavaScript. "
+          content={metadata.description}
         />
         <meta
           property="og:image"
-          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
-          // content="/share.jpg"
+          content={metadata.ogImage}
         />
-
-        {/* <!-- Twitter --> */}
         <meta
           property="twitter:card"
           content="summary_large_image"
@@ -59,59 +55,15 @@ export default async function Home() {
         />
         <meta
           property="twitter:title"
-          content="Harry Yates | Fullstack Developer"
+          content={metadata.title}
         />
         <meta
           property="twitter:description"
-          content="I am a Fullstack Developer focusing on JavaScript. "
+          content={metadata.description}
         />
         <meta
           property="twitter:image"
-          content="https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg"
-          // content="/share.jpg"
-        />
-
-        <link
-          rel="preload"
-          href="/fonts/HelveticaNowDisplay-Regular.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="/fonts/HelveticaNowDisplay-Regular.woff2"
-          as="font"
-          type="font/woff"
-        />
-        <link
-          rel="preload"
-          href="/fonts/HelveticaNowDisplay-Medium.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="/fonts/HelveticaNowDisplay-Medium.woff2"
-          as="font"
-          type="font/woff"
-        />
-
-        <link
-          rel="icon"
-          href="/favicon.ico"
-          sizes="any"
-        />
-        <link
-          rel="icon"
-          href="/icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/apple-icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
+          content={metadata.ogImage}
         />
       </Head>
       <header className="w-full mx-auto flex flex-col justify-between items-start">
