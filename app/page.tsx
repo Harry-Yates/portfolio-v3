@@ -17,7 +17,7 @@ export default async function Home() {
         <title>Hello world</title>
         <meta
           property="og:image"
-          content="https://portfolio-v3-18qkugzpr-harry-yates.vercel.app/opengraph-image.png?3d69783f09f78aa1"
+          content="https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png"
         />
       </head>
       <header className="w-full mx-auto flex flex-col justify-between items-start">
