@@ -46,6 +46,29 @@ export default async function Home() {
           name="description"
           content={metadata.description}
         />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta
+          property="og:title"
+          content={metadata.title}
+        />
+        <meta
+          property="og:description"
+          content={metadata.description}
+        />
+        <meta
+          property="og:url"
+          content="https://www.hyates.com/"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="fb:app_id"
+          content="YOUR_FACEBOOK_APP_ID"
+        />
+
         {metadata.openGraph?.images.map((image, index) => (
           <meta
             key={index}
