@@ -11,14 +11,17 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   const projects = await fetchProjects();
+  const isProd = process.env.NODE_ENV === "production";
+  const ogImageUrl = isProd
+    ? "https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png"
+    : "http://localhost:3000/opengraph-image.jpg";
 
   return (
     <div className="flex flex-col min-h-screen mx-auto max-w-5xl px-8 md:px-16 lg:px-8">
       <Head>
         <meta
           property="og:image"
-          // content="https://www.hyates.com/fb-image.jpg"
-          content="https://www.hyates.com/opengraph-image.jpg"
+          content={ogImageUrl}
         />
         <meta
           property="og:image:type"
@@ -34,7 +37,7 @@ export default async function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://www.hyates.com/tw-image.jpg"
+          content={ogImageUrl}
         />
         <meta
           name="twitter:image:type"
