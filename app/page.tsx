@@ -2,7 +2,6 @@ import Head from "next/head";
 import { getProjects as fetchProjects } from "@/app/sanity/sanity-utils";
 import Links from "./components/Links";
 import VideoCard from "./components/VideoCard";
-import { Metadata } from "next";
 
 // "https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png"
 
@@ -27,7 +26,7 @@ export const metadata: MetadataType = {
   openGraph: {
     images: [
       {
-        url: "/share.png",
+        url: "/share.jpg",
         width: 1200,
         height: 630,
         alt: "Harry Yates",
