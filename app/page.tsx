@@ -13,7 +13,7 @@ export default async function Home() {
   const projects = await fetchProjects();
   const isProd = process.env.NODE_ENV === "production";
   const ogImageUrl = isProd
-    ? "https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png"
+    ? "https://harryyates.co.uk/opengraph-image.jpg"
     : "http://localhost:3000/opengraph-image.jpg";
 
   return (
