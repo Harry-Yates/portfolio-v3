@@ -3,9 +3,9 @@ import { getProjects as fetchProjects } from "@/app/sanity/sanity-utils";
 import Links from "./components/Links";
 import VideoCard from "./components/VideoCard";
 
-// "https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png"
+//cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png
 
-type OGImage = {
+https: type OGImage = {
   url: string;
   width: number;
   height: number;
@@ -26,7 +26,7 @@ export const metadata: MetadataType = {
   openGraph: {
     images: [
       {
-        url: "/share.jpg",
+        url: "https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png",
         width: 1200,
         height: 630,
         alt: "Harry Yates",
@@ -58,7 +58,7 @@ export default async function Home() {
         />
         <meta
           property="og:url"
-          content="https://www.hyates.com/"
+          content="https://yourwebsite.com/page-url"
         />
         <meta
           property="og:type"
@@ -70,11 +70,25 @@ export default async function Home() {
         />
 
         {metadata.openGraph?.images.map((image, index) => (
-          <meta
-            key={index}
-            property="og:image"
-            content={image.url}
-          />
+          <>
+            <meta
+              key={index}
+              property="og:image"
+              content={image.url}
+            />
+            <meta
+              property="og:image:width"
+              content={String(image.width)}
+            />
+            <meta
+              property="og:image:height"
+              content={String(image.height)}
+            />
+            <meta
+              property="og:image:alt"
+              content={image.alt}
+            />
+          </>
         ))}
       </Head>
       <header className="w-full mx-auto flex flex-col justify-between items-start">
