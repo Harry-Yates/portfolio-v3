@@ -7,7 +7,7 @@ export const metadata = {
   title: "Harry Yates | Fullstack Developer",
   description: "Portfolio",
   ogImage:
-    "https://cdn.sanity.io/files/ofj891ge/production/f003a9b5531cbd861d124d013c8f244d7de1c3c0.jpg",
+    "https://cdn.sanity.io/files/ofj891ge/production/7acccd5325763e1df6cc39fde0cef6fa6f365232.png",
 };
 
 export default async function Home() {
