@@ -11,7 +11,6 @@ export default function VideoCard({ project }: { project: Project }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={name ? `Learn more about ${name}` : "Project link"}
         className="fade-in-slide-up py-4 border-b-2 border-gray-200/60 pb-12 relative w-sm max-w-md">
         <div className=" group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
           <div
