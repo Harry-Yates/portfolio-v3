@@ -11,6 +11,7 @@ export default function VideoCard({ project }: { project: Project }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={name ? `Learn more about ${name}` : "Project link"}
         className="fade-in-slide-up py-4 border-b-2 border-gray-200/60 pb-12 relative w-sm max-w-md">
         <div className=" group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
           <div
@@ -46,6 +47,7 @@ export default function VideoCard({ project }: { project: Project }) {
           href={github}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="View Project on GitHub"
           className="fade-in-slide-up absolute bottom-4 left-0">
           <CodeBracketSquareIcon className="h-6 w-6 text-gray-300" />
         </a>
