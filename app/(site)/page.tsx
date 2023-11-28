@@ -34,9 +34,6 @@ export const metadata: Metadata = {
     title: "Harry Yates | Fullstack Developer",
     card: "summary_large_image",
   },
-  icons: {
-    shortcut: "/flavicon.ico",
-  },
 };
 
 export default async function Home() {
