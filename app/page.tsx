@@ -20,6 +20,22 @@ export const metadata: Metadata = {
     ],
     locale: "en_GB",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+    },
+  },
+  twitter: {
+    title: "Harry Yates | Fullstack Developer",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/flavicon.ico",
+  },
 };
 
 export default async function Home() {
