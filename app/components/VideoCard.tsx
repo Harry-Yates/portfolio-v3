@@ -6,12 +6,12 @@ export default function VideoCard({ project }: { project: Project }) {
   const { video, name, url, github, content } = project;
 
   return (
-    <div className="grid grid-cols-1 gap-4 relative">
+    <div className="grid grid-cols-1 gap-4 relative mx-auto">
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="fade-in-slide-up py-4 border-b-2 border-gray-200/60 pb-12 relative">
+        className="fade-in-slide-up py-4 border-b-2 border-gray-200/60 pb-12 relative w-sm max-w-md">
         <div className=" group bg-transparent transform rounded-sm transition duration-500 hover:cursor-pointer">
           <div
             className="first-letter:light-shadow transition-shadow rounded-sm duration-500 relative w-full"
